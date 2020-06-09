@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>Name</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<meta charset="utf-8">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* padding,border nach innen darstellen */
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    html,body {
+	    font:1rem Helvetica, Arial, sans-serif;
+        background:  #ff6600;
+    }
+    
+    form {
+        max-width: 900px;
+        margin: auto;
+    }
+    input,textarea {
+        background: none;
+        border: 1px solid #ddd;
+        width: 100%;
+        outline: none;
+        font:0.8rem Helvetica, Arial, sans-serif;
+        padding: 0.5rem;
+    }
+    input:focus, textarea:focus {
+        background: #DEEDEA;
+    }
+    input[type="radio"] {
+        width: auto;
+    }
+    input[type="submit"] {
+        padding: 0.7rem;
+    }
+    input[type="submit"]:hover {
+        background: #DEEDEA;
+        cursor: pointer;
+    }
+    form p {
+        padding: 0.3rem 0;
+    }
+    .wrapper{
+   max-width: 900px;
+    margin:0 auto;
+}
+</style>
+</head>
+<body>
+             <div class="wrapper">
+    <h1>Kontaktformular</h1>
+    <form action="script.php" method="post">
+        <p><input placeholder="Name" type="text" name="Name"></p>
+        <p><input placeholder="E-Mail" type="email" name="eMail"></p>
+        <p><input placeholder="Telefon" type="text" name="Telefon"></p>
+        <p><textarea placeholder="Anfrage" rows="5" name="Anfrage"></textarea></p>
+        <p>Antwort bitte per E-Mail 
+            <input type="radio" name="Antwort" value="per E-Mail" checked> / Telefon 
+            <input type="radio" name="Antwort" value="per Telefon"></p>
+        <p><input type="submit" value="s e n d e n" name="send"></p>
+    </form>
+
+    </div> 
+</body>
+</html>
