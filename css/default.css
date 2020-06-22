@@ -204,7 +204,7 @@ main{
 }
 .photoheader{  
 	overflow: hidden;
-    height:600px;
+    height:550px;
     
 }
 #gallery{
@@ -463,36 +463,36 @@ h3.datediv{
     margin-top: 3%;
     padding-top: 18%;
     background: rgba(241,220,193,0.80);
-    height:90vh;
+    height:110vh;
 }
 #a33{
     margin-top: 3%;
     padding-top: 18%;
     background: rgba(241,220,193,0.80);
-	height:90vh;
+	height:100vh;
 }
 #a44{
     margin-top: 3%;
     padding-top: 18%;
-	height:155vh;
+	height:165vh;
     background: rgba(241,220,193,0.80);
 }
 #a55{
    margin-top: 3%;
     padding-top: 18%;
-    height:105vh;
+    height:125vh;
     background: rgba(241,220,193,0.80);
 }
 #a66{
    margin-top: 3%;
     padding-top: 18%;
-	height: 80vh;
+	height: 90vh;
    background: rgba(241,220,193,0.80);
 }
 #a77{
    margin-top: 3%;
     padding-top: 18%;
-    height: 65vh;
+    height: 75vh;
    background: rgba(241,220,193,0.80);
    margin-bottom: 3%;
 }
