@@ -25,6 +25,7 @@ box-sizing: border-box; /* padding,border nach innen darstellen */
 img{
     max-width:100%;
     height:auto;
+    
 }
 /*mobile-----------------------------------------------*/
 /*mobile-----------------------------------------------*/
@@ -34,10 +35,26 @@ img{
 html,body {
     font:1rem Helvetica, Arial, sans-serif;
 }
-
-body{
+     /*body{
  background: url( "../img/05.jpeg") center top fixed;
     background-size: cover;
+    }*/
+   body{
+        position: relative;
+        z-index: 0;
+         display: block;
+    }
+body::before{  
+ background: url( "../img/05.jpeg") center top fixed ;
+ content: "";  
+ z-index: -1;
+ opacity: 0.3;
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ background-size: cover;
     }
 /*topheader----------------------------------*/
 
@@ -96,9 +113,10 @@ body{
 position: fixed;
 top: -200px;
 right:0;
-background: rgba(200,200,200,0.8);
+background: rgba(200,200,200,0.9);
 width: 100%;
 transition: 0.5s;
+    z-index: 1;
 }
 #topnav:target {
 top: 0;
@@ -107,7 +125,7 @@ top: 0;
 position: fixed;
 right:0;
 top:0;
-background: rgba(200,200,200,0.8);
+background: rgba(200,200,200,0.9);
 line-height: 20px;
 width: 100%;
 text-decoration: none;
@@ -164,7 +182,7 @@ border-bottom: 1px solid;
                 right: 2rem;
                 bottom: 2rem;
                 display:none;
-                z-index: 100;
+                z-index: 2;
             }
             #back-top a{
                 font-size: 1.5rem;
@@ -182,10 +200,11 @@ border-bottom: 1px solid;
 main{
     margin-top: 30%;
     padding-top: 2rem;
-    min-height: 1200px;
+    
 }
 .photoheader{  
 	overflow: hidden;
+    height:600px;
     
 }
 #gallery{
@@ -197,20 +216,21 @@ main{
     height: 51vh;
     margin-top: 1%;
     padding-top: 3%;
+    padding-left: 4%;
     background: rgba(241,220,193,0.50);
 }
 #above{
-   height: 25vh;
+   height: 20vh;
    padding-bottom: 1%;
   
 }
 #below{
-    height: 25vh;
+    height: 20vh;
    
 }
 .rahmen{
     width: 45%;
-    height:20vh;
+    height:17vh;
     position: relative;
     overflow: hidden;
     float:left;
@@ -241,7 +261,7 @@ main{
                 top:185px;
                 left:0px;
                 background:rgba(255,255,255,.5);
-                    width:100%;
+                width:100%;
                 padding:5px 20px;
                 transition: 0.9s;
                 
@@ -379,7 +399,7 @@ h3.datediv{
 	height: 3rem;
 	background:radial-gradient(#FFA500, #FF5733);
 	margin-right: 10px;
-	padding: 1rem;
+	padding: 3% 2%;
 	text-align: center;
 	font-size:0.8rem;
 	border-radius: 50%;
@@ -441,32 +461,38 @@ h3.datediv{
     }
 #a22{
     margin-top: 3%;
+    padding-top: 18%;
     background: rgba(241,220,193,0.80);
-    height:70vh;
+    height:90vh;
 }
 #a33{
     margin-top: 3%;
+    padding-top: 18%;
     background: rgba(241,220,193,0.80);
-	height:65vh;
+	height:90vh;
 }
 #a44{
     margin-top: 3%;
-	height:150vh;
+    padding-top: 18%;
+	height:155vh;
     background: rgba(241,220,193,0.80);
 }
 #a55{
    margin-top: 3%;
-    height:85vh;
+    padding-top: 18%;
+    height:105vh;
     background: rgba(241,220,193,0.80);
 }
 #a66{
    margin-top: 3%;
+    padding-top: 18%;
 	height: 80vh;
    background: rgba(241,220,193,0.80);
 }
 #a77{
    margin-top: 3%;
-    height: 50vh;
+    padding-top: 18%;
+    height: 65vh;
    background: rgba(241,220,193,0.80);
    margin-bottom: 3%;
 }
@@ -660,6 +686,52 @@ color:#000;
 font-size: 0.7rem;
 line-height: 1rem;
 }
+    
+  /*form css start---------------------------*/
+    
+   form {
+        max-width: 400px;
+        margin: 2% 4%;
+       padding-bottom: 5%;
+    }
+    input,textarea {
+        background: none;
+        border: 1px solid #FFA500;
+        width: 100%;
+        outline: none;
+        font:0.8rem Helvetica, Arial, sans-serif;
+        padding: 0.5rem;
+    }
+    input:focus, textarea:focus {
+        background: #DEEDEA;
+    }
+    input[type="radio"] {
+        width: auto;
+    }
+    input[type="submit"] {
+        padding: 0.7rem;
+    }
+    input[type="submit"]:hover {
+        background: #DEEDEA;
+        cursor: pointer;
+    }
+    form p {
+        padding: 0.3rem 0;
+    } 
+    #form-article{
+        background: rgba(241,220,193,0.50);
+        margin-bottom: 5%
+    
+    }
+    
+ /*form css ends---------------------------*/     
+    
+    
+    
+    
+    
+    
+    
 
 /*freie klassen---------------------------*/
 .clearfix:after{
@@ -763,9 +835,26 @@ html,body {
     font:1rem Helvetica, Arial, sans-serif;
 }
 
-body{
+/*body{
  background: url( "../img/05.jpeg") center top fixed;
     background-size: cover;
+    }*/
+      body{
+        position: relative;
+        z-index: 0;
+         display: block;
+    }
+body::before{  
+ background: url( "../img/05.jpeg") center top fixed ;
+ content: "";  
+ z-index: -1;
+ opacity: 0.3;
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ background-size: cover;
     }
 /*topheader----------------------------------*/
 
@@ -904,7 +993,7 @@ body{
 main{
     margin-top: 6%;
     padding-top: 2rem;
-    min-height: 1200px;
+    
 }
 .photoheader{
    display: flex;
@@ -1041,7 +1130,7 @@ main{
 	display: flex;
 	flex-basis:60%;
     height:20rem;
-    background: red;
+    
     margin-top:0;
 	overflow: hidden;
 }
@@ -1058,7 +1147,7 @@ main{
 #latestnews{
 	display: flex;
 	flex-basis: 70%;
-	background:yellow;
+	background:#F5B041;
 }
 #allnews{
 	width:100%;
@@ -1168,10 +1257,11 @@ h3.datediv{
 #a22{
     margin-top: 4rem;
     background: rgba(241,220,193,0.50);
-    height:110vh;
+    height:90vh;
 }
 #a33{
     margin-top: 4rem;
+    height:90vh;
     background: rgba(241,220,193,0.50);
 }
 #a44{
@@ -1375,7 +1465,44 @@ flex-basis: 40%;
     color:#000;
    line-height: normal;
 }
-
+/*form css start---------------------------*/
+    
+   form {
+        max-width: 900px;
+        margin: auto;
+       padding-bottom: 5%;
+    }
+    input,textarea {
+        background: none;
+        border: 1px solid #FFA500;
+        width: 100%;
+        outline: none;
+        font:0.8rem Helvetica, Arial, sans-serif;
+        padding: 0.5rem;
+    }
+    input:focus, textarea:focus {
+        background: #DEEDEA;
+    }
+    input[type="radio"] {
+        width: auto;
+    }
+    input[type="submit"] {
+        padding: 0.7rem;
+    }
+    input[type="submit"]:hover {
+        background: #DEEDEA;
+        cursor: pointer;
+    }
+    form p {
+        padding: 0.3rem 0;
+    } 
+    #form-article{
+        background: rgba(241,220,193,0.50);
+        margin-bottom: 5%
+    
+    }
+    
+ /*form css ends---------------------------*/   
 /*freie klassen---------------------------*/
 .clearfix:after{
     content:"";

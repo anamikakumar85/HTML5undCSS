@@ -43,7 +43,7 @@ $('#topnav p a').click(function(){
 $('#topnav').css({top:'0px'});
 $('#topnav p a').css({top:'-40px'});
 return false;
-});
+});    
 });
 
 
